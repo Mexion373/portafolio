@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Mi Portafolio</title>
+    <meta name="description" content="Portafolio de Mateo">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Portafolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <li class="nav-item">
+    <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="projects.html">Proyectos</a>
+  </li>
+</ul>
+  </div>
+  </div>
+</nav>
+<header class="container text-center py-5">
+  <h1>Mis Proyectos</h1>
+  <p class="lead">Algunos trabajos que he realizado durante mi formación</p>
+</header>
+<main class="container">
+  <div class="row py-4">
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img src="img/comaseguro.png" class="card-img-top" alt="Captura de ComaSeguro en funcionamiento">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">ComaSeguro</h5>
+        <p class="card-text">Sistema en C# para calcular ventas de productos (alimentos y bebidas), aplicando descuentos por cantidad, incrementos según tipo de bebida, e impuestos. Implementado con clases abstractas, herencia e interfaces.</p>
+        <button class="btn btn-primary mt-auto align-self-start btn-video"
+        data-video="https://www.youtube.com/embed/PAmfXkTmBlU?si=pQQpxqwwjQ5ou-20"
+        data-titulo="Video de ComaSeguro">Ver Video</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <div id="carruselDonChucho" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/donchucho.png" class="d-block w-100 card-img-top" alt="Pantalla de inicio de sesión de Agrícola Don Chucho">
+    </div>
+    <div class="carousel-item">
+      <img src="img/donchucho2.png" class="d-block w-100 card-img-top" alt="Captura 2 de Agrícola Don Chucho">
+    </div>
+    <div class="carousel-item">
+      <img src="img/donchucho3.png" class="d-block w-100 card-img-top" alt="Captura 3 de Agrícola Don Chucho">
+    </div>
+    <div class="carousel-item">
+      <img src="img/donchucho4.png" class="d-block w-100 card-img-top" alt="Captura 4 de Agrícola Don Chucho">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carruselDonChucho" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carruselDonChucho" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Agrícola Don Chucho</h5>
+        <p class="card-text">Sistema de escritorio en C# para la gestión de una tienda: login con roles de empleado y administrador, control de clientes, productos, pedidos, pagos e informes.</p>
+        <button class="btn btn-primary mt-auto align-self-start btn-video"
+        data-video="https://www.youtube.com/embed/p6x9qym73lM?si=2LWYPz7gJr_xe3PM"
+        data-titulo="Video de donchucho">Ver Video</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card h-100">
+      <img src="img/sistemaventas.png" class="card-img-top" alt="Captura de la base de datos Sistema de Ventas en SQL Server">
+      <div class="card-body d-flex flex-column">
+        <h5 class="card-title">Sistema de Ventas (SQL)</h5>
+        <p class="card-text">Diseño de base de datos relacional en SQL Server: tablas con claves foráneas, funciones, vistas y procedimientos almacenados para gestionar ventas, stock y clientes.</p>
+        <button class="btn btn-primary mt-auto align-self-start btn-video"
+        data-video="https://www.youtube.com/embed/tpjmONtsXKI?si=xfqzyJ0_KBY6v8_P"
+        data-titulo="Video de sistemaventas">Ver Video</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+</main>
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="modalTitulo" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitulo">Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        <div class="ratio ratio-16x9">
+          <iframe id="videoFrame" src="" title="Video del proyecto" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">&copy; 2025 Mateo Gomez</p>
+  <p>
+    <a href="mailto:teo200471@gmail.com" class="text-white mx-2"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://github.com/Mexion373" class="text-white mx-2" target="_blank"><i class="fa-brands fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/mateo-gomez-taborda-693906441/" class="text-white mx-2" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+  </p>
+</footer>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
